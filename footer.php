@@ -7,18 +7,17 @@
           <h6 class="font-weight-bold"> <?php echo get_theme_mod('npa_position_1_setting', 'Editor');?> </h6>
           <h6 class="mb-2"> <?php echo get_theme_mod('npa_position_name_1_setting', 'এস এ ফারুক');?> </h6>
         </div>
-        <div class="footerMatter">
-          <h6 class="font-weight-bold"> <?php echo get_theme_mod('npa_position_2_setting', 'Editor');?> </h6>
-          <h6 class="mb-2"> <?php echo get_theme_mod('npa_position_name_2_setting', 'Saiful Alam');?> </h6>
-        </div>
       </div>
 
       <!-- Temporary Address -->
+      <div class="col-md-1 footerMatter">
+        <h6 class="font-weight-bold"> <?php echo get_theme_mod('npa_position_2_setting', 'Editor');?> </h6>
+        <h6 class="mb-2"> <?php echo get_theme_mod('npa_position_name_2_setting', 'Saiful Alam');?> </h6>
+      </div>
 
-      <div class="col-md-9 footerMatter">
+      <div class="col-md-8 footerMatter">
         <div class="row">
           <div class="col-md-4">
-            <h6 class="font-weight-bold"> Quick Links</h6>
             <?php 
               function footer_left_menu_fallback(){
             ?>
@@ -26,8 +25,7 @@
               <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Home</a></li>
               <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">About us</a></li>
               <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Contact us</a></li>
-              <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Cookies Policy</a></li>
-              <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Disclaimer</a></li>
+
             </ul>
             <?php } 
               wp_nav_menu(array(
@@ -40,12 +38,29 @@
             ?>
           </div>
           <div class="col-md-4">
-            <h6 class="font-weight-bold"> Quick Links</h6>
+            <?php 
+              function footer_mid_menu_fallback(){
+            ?>
+            <ul class="navbar-nav">
+              <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Cookies Policy</a></li>
+              <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Disclaimer</a></li>
+              <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Medical Disclaimer</a></li>
+            </ul>
+            <?php } 
+              wp_nav_menu(array(
+                'theme_location'    => 'footer-menu-mid',
+                'menu_class'        => 'navbar-nav',
+                'container'         => false,
+                'depth'             => 0,
+                'fallback_cb'       => 'footer_mid_menu_fallback'
+              ));
+            ?>
+          </div>
+          <div class="col-md-4">
             <?php 
               function footer_right_menu_fallback(){
             ?>
             <ul class="navbar-nav">
-              <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Medical Disclaimer</a></li>
               <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Privacy Policy</a></li>
               <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Terms and Conditions</a></li>
               <li class="nav-item py-1"><a href="#" class="nav-link text-dark p-0">Our Writers Panel </a></li>
@@ -59,17 +74,6 @@
                 'fallback_cb'       => 'footer_right_menu_fallback'
               ));
             ?>
-          </div>
-          <div class="col-md-4">
-            <h6 class="font-weight-bold"> <?php echo get_theme_mod('npa_contact_title', 'Office');?>
-            </h6>
-            <h6 class="mb-2">
-              <?php echo get_theme_mod('npa_address', ' Dhaka-1217।');?>
-            </h6>
-            <h6> <span class="font-weight-bold"> Phone : </span>
-              <?php echo get_theme_mod('npa_phone_number', '০১৯১৫ ৩৪৪৪১৮');?> </h6>
-            <h6> <span class="font-weight-bold"> E-mail : </span>
-              <?php echo get_theme_mod('npa_email_address', 'faroque.computer@gmail.com');?> </h6>
           </div>
         </div>
       </div>

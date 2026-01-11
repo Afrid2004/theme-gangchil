@@ -1,6 +1,6 @@
 <?php
 $wp_customize->add_section('npa_header_area', array(
-    'title'         =>  __('Main Logo, position and Background Color', 'npa'),
+    'title'         =>  __('Main Logo, Slogan, position and Background Color', 'npa'),
     'description'   => 'If you want to update main logo, you can do it here.',
     'panel'         => 'npa_header_panel',
 ));
@@ -54,3 +54,17 @@ $wp_customize->add_control('npa_main_logo_position', array(
     ),
 
 ));
+
+/**
+ * ==========================
+ * Main Logo upload 
+ * ==========================
+ */
+$wp_customize->add_setting('npa_slogan', array(
+    'default' => get_bloginfo('template_directory') . '/assets/images/slogan.jpeg',
+));
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'npa_slogan', array(
+    'label'        => __('Slogan Upload', 'npa'),
+    'settings'     => 'npa_slogan',
+    'section'      => 'npa_header_area',
+)));

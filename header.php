@@ -346,8 +346,7 @@ ul#faroqueId li {
 
           <div class="col-md-8 double-ads-order">
             <div>
-              <h5 class="mb-0 slogan">Trusted health and wellness for families worldwide
-              </h5>
+              <?php echo get_template_part('get/slogan'); ?>
             </div>
             <div class="row">
               <?php //get_template_part('advertisement/ad_1'); ?>
