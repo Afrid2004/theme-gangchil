@@ -1,0 +1,1 @@
+<div class="breadcrumbs text-uppercase bg-b10 text-el py-1 px-2 mb-3" xmlns:v="http://rdf.data-vocabulary.org/#"> <?php if(function_exists('bcn_display')) { bcn_display(); }?> </div>
