@@ -1,3 +1,5 @@
+
+
 /* Default Layout: 992px.*/
 
 span.classified p {
@@ -1021,5 +1023,24 @@ span.classified p {
     }
     .fix.highlights_image_title, .per_category {
       width: 31.33%;
+    }
+}
+
+@media (min-width: 600px) {
+    .newsletter-modal-content{
+        max-width: 500px;
+    }
+}
+@media (min-width: 768px) {
+    .newsletter-modal-content{
+        max-width: 600px;
+    }
+    .newsletter-image img{
+    aspect-ratio: 4/4;
+}
+}
+@media (min-width: 991px) {
+    .newsletter-modal-content{
+        max-width: 800px;
     }
 }

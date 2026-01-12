@@ -13,4 +13,5 @@
 	//get_template_part('get/section9');
 	// get_template_part('get/section10');
 	get_template_part('get/section6');
+
 	get_footer();

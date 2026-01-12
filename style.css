@@ -2098,4 +2098,77 @@ ul#webticker>li a {
     width: 5px;
 }
 .overflow-y-scroll::-webkit-scrollbar-thumb{
-    background-color: lightgray;}
+    background-color: lightgray;
+}
+
+ /* Modal Background */
+.newsletter-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.6); /* dark overlay */
+}
+
+/* Modal Content */
+.newsletter-modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  max-width: 380px;
+  animation: fadeIn 0.5s;
+  padding: 0px 20px 20px 20px;
+  height: fit-content;
+}
+
+/* Close Button */
+.newsletter-close {
+  color: #555;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 0;
+
+}
+
+.newsletter-image img{
+    aspect-ratio: 4/3;
+}
+.close-btn{
+          padding: .5rem 0 .2rem 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.newsletter-image img{
+    border-radius: 10px;
+}
+
+.clipchamp-form input{
+    border: 1px solid lightgray;
+}
+.clipchamp-form input:focus{
+    border: 1px solid #196467;
+}
+.clipchamp-form button{
+    background-color: #196467;
+    color: white;
+}
+.clipchamp-form button:hover{
+    background-color: #134b4e;
+    color: white;
+}
+.clipchamp-form .privacy-anchor{
+    color: #53595f !important;
+    text-decoration: underline;
+}

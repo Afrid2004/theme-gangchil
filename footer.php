@@ -93,7 +93,34 @@
     </div>
   </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const modal = document.getElementById("newsletter-modal");
+  const closeBtn = document.getElementById("newsletter-close");
+
+  // Show modal after 2 seconds
+  setTimeout(() => {
+    modal.style.display = "flex";
+  }, 2000);
+
+  // Close when user clicks the X
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Optional: Close when user clicks outside modal content
+  window.addEventListener("click", (e) => {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>
+
+
 <?php wp_footer(); ?>
+
 </body>
 
 </html>
