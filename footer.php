@@ -3,9 +3,9 @@
     <div class="row d-flex align-items-top">
       <div class="col-md-3 mb-3 mb-md-0">
         <?php echo get_template_part('get/main_logo'); ?>
-        <div class="footerMatter mt-3">
+        <div class="footerMatter mt-3 d-flex gap-2">
           <h6 class="font-weight-bold"> <?php echo get_theme_mod('npa_position_1_setting', 'Editor');?> </h6>
-          <h6 class="mb-2"> <?php echo get_theme_mod('npa_position_name_1_setting', 'এস এ ফারুক');?> </h6>
+          <h6> <?php echo get_theme_mod('npa_position_name_1_setting', 'এস এ ফারুক');?> </h6>
         </div>
       </div>
 

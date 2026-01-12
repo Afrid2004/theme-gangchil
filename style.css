@@ -2087,3 +2087,15 @@ ul#webticker>li a {
 .footer-link > .current-menu-item > a{
     background: none !important;
 }
+.gap-2{
+    gap: .5rem !important;
+}
+.overflow-y-scroll{
+    overflow-y: scroll !important;
+    height: 290px;
+}
+.overflow-y-scroll::-webkit-scrollbar{
+    width: 5px;
+}
+.overflow-y-scroll::-webkit-scrollbar-thumb{
+    background-color: lightgray;}
